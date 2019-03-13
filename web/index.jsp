@@ -13,5 +13,27 @@
     </head>
     <body>
         <h1>Ingreso-Consumiendo Servicio-</h1>
+        <form action="SLogin" method="POST">
+            <table>    
+                <tbody>  
+                    <tr>
+                        <td>Dni</td>
+                        <td><input type="text" name="txtDni" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Nivel</td>
+                        <td><select name="cboNiveles" disabled="disabled">
+                                <option value="1">V.I.P</option>
+                                <option value="2">PREMIUN</option>
+                                <option value="3">BASIC</option>
+                            </select></td>
+                    </tr>
+                     <tr>
+                         <td><input type="submit" value="Login" name="btnLogin" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </form>
     </body>
 </html>
