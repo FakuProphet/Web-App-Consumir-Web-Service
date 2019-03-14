@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.xml.ws.WebServiceRef;
 import webservices.Usuario;
 import webservices.WebServiceGestionUsuario_Service;
@@ -43,7 +44,8 @@ public class SRegistro extends HttpServlet {
             String nivelID = request.getParameter("niveles");
             
             servicioDeRegistro(Integer.parseInt(nroDoc), nombre, apellido,Integer.parseInt(nivelID) ,password);
-        
+           // HttpSession sesion = request.getSession();
+            response.sendRedirect("paginaUsuario.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
