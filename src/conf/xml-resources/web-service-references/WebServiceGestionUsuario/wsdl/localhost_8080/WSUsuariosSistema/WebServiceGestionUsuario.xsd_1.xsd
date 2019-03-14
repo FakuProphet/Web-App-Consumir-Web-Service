@@ -4,6 +4,10 @@
 
 <xs:element name="ValidarLoginResponse" type="tns:ValidarLoginResponse"/>
 
+<xs:element name="listaNiveles" type="tns:listaNiveles"/>
+
+<xs:element name="listaNivelesResponse" type="tns:listaNivelesResponse"/>
+
 <xs:element name="servicioDeRegistro" type="tns:servicioDeRegistro"/>
 
 <xs:element name="servicioDeRegistroResponse" type="tns:servicioDeRegistroResponse"/>
@@ -44,6 +48,16 @@
 <xs:complexType name="servicioDeRegistroResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaNiveles">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listaNivelesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
 </xs:sequence>
 </xs:complexType>
 </xs:schema>
