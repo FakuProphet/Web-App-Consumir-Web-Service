@@ -45,6 +45,8 @@ public class SComprobarLogin extends HttpServlet {
         
         Usuario nuevo = validarLogin(Integer.parseInt(nroDni),Integer.parseInt(nivelID));
         
+        
+        
         if(nuevo!=null)
         {
             HttpSession sesion = request.getSession();
