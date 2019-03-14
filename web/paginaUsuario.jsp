@@ -15,32 +15,38 @@
     <body>
         <h1>Usuario logueado:<jsp:getProperty name="usuarioLogueado" property="apellido" /></h1>
         <jsp:useBean id="usuarioLogueado" scope="session" class="webservices.Usuario" />
-        
+
         <h1>Registrar nuevo usuario</h1>
 
-       
 
-        <form name="contact-form" action="" method="post">
+
+        <form  action="SRegistro" method="post">
 
             <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input name="nombre" type="text" class="form-control"
                        placeholder="Nombre...">
             </div>
-
             <div class="form-group">
                 <label for="apellido">Apellido</label>
                 <input name="apellido" type="text" class="form-control"
                        placeholder="Apellido...">
             </div>
-
             <div class="form-group">
-                <label for="NroDocumento">Nro Documento</label>
-                <input name="NroDocumento" type="text" class="form-control"
+                <label for="nroDocumento">Nro Documento</label>
+                <input name="nroDocumento" type="text" class="form-control"
                        placeholder="Nro dni...">
             </div>
             <div class="form-group">
-                <label for="Password">Password</label>
+                <label for="niveles">NIVEL DE USUARIO</label>
+                <select name="niveles"  class="form-control">
+                    <option value="1">V.I.P</option>
+                    <option value="2">PREMIUN</option>
+                    <option value="3">BASIC</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
                 <input name="password" type="text" class="form-control"
                        placeholder="Password">
             </div>
