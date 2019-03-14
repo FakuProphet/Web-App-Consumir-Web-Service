@@ -21,11 +21,11 @@
                 <tbody>  
                     <div class="form-group">
                         <labe>DNI</labe>
-                        <input type="text" name="txtDni" value="" required="true"  />
+                        <input type="text" name="txtDni" value="" class="form-control" required="true"  />
                     </div>
                     <div class="form-group">
                         <label>NIVEL DE USUARIO</label>
-                        <select name="cboNiveles" >
+                        <select name="cboNiveles"  class="form-control">
                                 <option value="1">V.I.P</option>
                                 <option value="2">PREMIUN</option>
                                 <option value="3">BASIC</option>
