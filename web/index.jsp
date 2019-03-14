@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Ingreso-Consumiendo Servicio-</h1>
-        <form action="SLogin" method="POST">
+        <form action="SComprobarLogin" method="POST">
             <table>    
                 <tbody>  
                     <tr>
