@@ -4,31 +4,31 @@
 <xsd:import namespace="http://WebServices/" schemaLocation="http://localhost:8080/WSUsuariosSistema/WebServiceGestionUsuario?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="servicioDeRegistro">
-<part name="parameters" element="tns:servicioDeRegistro"/>
-</message>
-<message name="servicioDeRegistroResponse">
-<part name="parameters" element="tns:servicioDeRegistroResponse"/>
-</message>
 <message name="ValidarLogin">
 <part name="parameters" element="tns:ValidarLogin"/>
 </message>
 <message name="ValidarLoginResponse">
 <part name="parameters" element="tns:ValidarLoginResponse"/>
 </message>
+<message name="servicioDeRegistro">
+<part name="parameters" element="tns:servicioDeRegistro"/>
+</message>
+<message name="servicioDeRegistroResponse">
+<part name="parameters" element="tns:servicioDeRegistroResponse"/>
+</message>
 <portType name="WebServiceGestionUsuario">
-<operation name="servicioDeRegistro">
-<input wsam:Action="http://WebServices/WebServiceGestionUsuario/servicioDeRegistroRequest" message="tns:servicioDeRegistro"/>
-<output wsam:Action="http://WebServices/WebServiceGestionUsuario/servicioDeRegistroResponse" message="tns:servicioDeRegistroResponse"/>
-</operation>
 <operation name="ValidarLogin">
 <input wsam:Action="http://WebServices/WebServiceGestionUsuario/ValidarLoginRequest" message="tns:ValidarLogin"/>
 <output wsam:Action="http://WebServices/WebServiceGestionUsuario/ValidarLoginResponse" message="tns:ValidarLoginResponse"/>
 </operation>
+<operation name="servicioDeRegistro">
+<input wsam:Action="http://WebServices/WebServiceGestionUsuario/servicioDeRegistroRequest" message="tns:servicioDeRegistro"/>
+<output wsam:Action="http://WebServices/WebServiceGestionUsuario/servicioDeRegistroResponse" message="tns:servicioDeRegistroResponse"/>
+</operation>
 </portType>
 <binding name="WebServiceGestionUsuarioPortBinding" type="tns:WebServiceGestionUsuario">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="servicioDeRegistro">
+<operation name="ValidarLogin">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -37,7 +37,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="ValidarLogin">
+<operation name="servicioDeRegistro">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
