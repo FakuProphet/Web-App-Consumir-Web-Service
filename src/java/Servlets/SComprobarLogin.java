@@ -48,7 +48,7 @@ public class SComprobarLogin extends HttpServlet {
         if(nuevo!=null)
         {
             HttpSession sesion = request.getSession();
-            sesion.setAttribute("UsuarioLogueado",nuevo);
+            sesion.setAttribute("usuarioLogueado",nuevo);
             response.sendRedirect("paginaUsuario.jsp");
         }
         else

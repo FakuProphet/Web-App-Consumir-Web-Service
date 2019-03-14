@@ -22,7 +22,7 @@
                     </tr>
                     <tr>
                         <td>Nivel</td>
-                        <td><select name="cboNiveles" disabled="disabled">
+                        <td><select name="cboNiveles">
                                 <option value="1">V.I.P</option>
                                 <option value="2">PREMIUN</option>
                                 <option value="3">BASIC</option>
